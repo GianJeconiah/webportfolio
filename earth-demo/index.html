@@ -1,1 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World! - Earth Facts</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: "Times New Roman", Times, serif;
+    }
+    .page {
+      display: flex;
+      height: 100vh;
+      border: 2px solid #000;
+    }
+    .pane {
+      width: 50%;
+      height: 100%;
+      overflow-y: auto;
+      padding: 20px 30px;
+    }
+    .pane-left {
+      border-right: 1px solid #999;
+    }
+    img, video {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    table, th, td {
+      border: 1px solid #333;
+    }
+    th, td {
+      padding: 6px 10px;
+      text-align: left;
+    }
+    hr {
+      margin: 20px 0;
+      border: none;
+      border-top: 1px solid #ccc;
+    }
+    button {
+      font-family: inherit;
+      padding: 4px 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
 
+  <div class="page">
+
+    <!-- LEFT PANE -->
+    <div class="pane pane-left">
+      <h1>Hello World!</h1>
+      <h2>A few facts about the world we live in</h2>
+
+      <img src="earth.jpeg" alt="Photo of planet Earth from space">
+
+      <p>
+        Earth is the third planet from the Sun and is the largest of the terrestrial planets.
+        The Earth is the only planet in our solar system not to be named after a Greek or Roman deity.
+        The Earth was formed approximately 4.54 billion years ago and is the only known planet to support life.
+      </p>
+
+      <hr>
+
+      <h2>About the earth</h2>
+      <ul>
+        <li>Polar Diameter: 12,714 km</li>
+        <li>Mass: 5.97 &times; 10^24 kg</li>
+        <li>Moons: <a href="https://space-facts.com/the-moon/">1 (The Moon)</a></li>
+      </ul>
+
+      <hr>
+    </div>
+
+    <!-- RIGHT PANE -->
+    <div class="pane pane-right">
+      <h2>Top 3 facts about the earth</h2>
+      <ol>
+        <li>The Earth's rotation is gradually slowing.</li>
+        <li>The Earth was once believed to be the centre of the universe.</li>
+        <li>Earth has a powerful magnetic field.</li>
+      </ol>
+
+      <hr>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Radius</th>
+            <th>Average Temperature</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mars</td>
+            <td>3,396km</td>
+            <td>-46&deg;c</td>
+          </tr>
+          <tr>
+            <td>Venus</td>
+            <td>6,052km</td>
+            <td>462&deg;c</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr>
+
+      <p>Want to know more?</p>
+      <button onclick="window.location.href='https://space-facts.com/earth/'">Click here</button>
+
+      <video src="earth.mp4" controls>
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+  </div>
+
+</body>
+</html>
